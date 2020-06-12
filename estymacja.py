@@ -119,16 +119,16 @@ def get_data():
 
 # ---------------------------------------
 
+if __name__ == '__main__':
+	data = get_data()
+	szereg1 = SzeregPrzedzialowy(data)
 
-data = get_data()
-szereg1 = SzeregPrzedzialowy(data)
-
-print('----------------------------------------')
-print(f'Liczba danych: {szereg1.ilosc}')
-print(f'Średnia: {szereg1.srednia}')
-print(f'Wariancja: {szereg1.wariancja}')
-print(f'Odchylenie standardowe: {szereg1.odch_standardowe}')
-print(f'Mediana: {szereg1.mediana}')
-print(f'Moda: {szereg1.moda}')
-print('----------------------------------------')
-print(szereg1.przedzial_ufnosci_srednia())
+	print('----------------------------------------')
+	print(f'Liczba danych: {szereg1.ilosc}')
+	print(f'Średnia: {szereg1.srednia}')
+	print(f'Wariancja: {szereg1.wariancja}')
+	print(f'Odchylenie standardowe: {szereg1.odch_standardowe}')
+	print(f'Mediana: {szereg1.mediana}')
+	print(f'Moda: {szereg1.moda}')
+	print('----------------------------------------')
+	print(szereg1.przedzial_ufnosci_srednia())
